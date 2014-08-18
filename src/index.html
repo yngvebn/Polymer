@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+	<meta charset="UTF-8">
+	<title>
+	</title>
+	<style>
+		
+	</style>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/platform/platform.js"></script>
+<link rel="stylesheet" href="site.css">
+	<link rel="import" href="bower_components/paper-button/paper-button.html">
+
+	<link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+
+	<link rel="import" href="bower_components/paper-dialog/paper-dialog-transition.html">
+
+</head>
+<body ng-app="main">
+<header></header>
+<div class="content-padding" ng-controller="Home as home">
+
+	<paper-button ng-click="home.action('dialog')" raisedButton role="button" label="Open dialog"></paper-button>
+
+	</div>
+<paper-dialog id="dialog" heading="Title for dialog" transition="paper-dialog-transition-center">
+
+    <paper-button label="More Info..." dismissive></paper-button>
+    <paper-button label="Decline" affirmative></paper-button>
+    <paper-button label="Accept" affirmative autofocus></paper-button>
+</paper-dialog>
+	<script src="app/app.js"></script>
+	<script src="app/home/Home.js"></script>
+</body>
+</html>
