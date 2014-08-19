@@ -10,7 +10,7 @@ footer.toolbar{
 	right: 0;
 	height: 3em;
 	padding: 0;
-	background: #e91e63;
+	background: #3f51b5;
 }
 
 footer.toolbar div{
@@ -22,7 +22,7 @@ footer.toolbar div{
 }
 
 footer.toolbar div.active{
-	background: #ff80ab;
+	background: #5c6bc0;
 }
 
 .span-1,
