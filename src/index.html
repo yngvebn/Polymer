@@ -9,13 +9,14 @@
 	<title>
 	</title>
 	<style>
-		body{ background-color: #888;}
 	</style>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/platform/platform.js"></script>
 <link rel="stylesheet" href="site.css">
 	<link rel="import" href="bower_components/paper-button/paper-button.html">
-
+	<link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
+	<link rel="import" href="bower_components/core-icons/device-icons.html">
+	<link rel="import" href="bower_components/core-icons/core-icons.html">
 	<link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
 
 	<link rel="import" href="bower_components/paper-dialog/paper-dialog-transition.html">
@@ -25,8 +26,13 @@
 <header></header>
 <div class="content-padding" ng-controller="Home as home">
 
-	<paper-button ng-click="home.action('dialog')" raisedButton role="button" label="Open dialog"></paper-button>
 
+ <div>
+      <div class="card">
+      There should be something here!
+        <paper-shadow z="1"></paper-shadow>
+      </div>
+    </div>
 	</div>
 <paper-dialog id="dialog" heading="Title for dialog" transition="paper-dialog-transition-center">
 
@@ -34,6 +40,18 @@
     <paper-button label="Decline" affirmative></paper-button>
     <paper-button label="Accept" affirmative autofocus></paper-button>
 </paper-dialog>
+
+<footer class="toolbar">
+	<div class="span-4 active">
+		<core-icon icon="device:access-time"></core-icon>
+	</div>
+	<div class="span-4">
+		<core-icon icon="icons:list"></core-icon>
+	</div>
+	<div class="span-4">
+		<core-icon icon="icons:settings"></core-icon>
+	</div>
+</footer>
 	<script src="app/app.js"></script>
 	<script src="app/home/Home.js"></script>
 </body>
