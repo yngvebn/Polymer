@@ -46,11 +46,9 @@ footer.toolbar div.active{
 }
 
 .card{
-
-	width: 90%;
+	width: 100%;
 	position: relative;
 	min-height: 10%;
 	margin: 0 auto;
-	margin-top: 0.5em;
 	padding: 0.5em;
 }
